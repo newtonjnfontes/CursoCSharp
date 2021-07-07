@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31313.79
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{E52C1588-1CAF-47CA-B00A-2E864469CF81}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{10CD8468-0103-4C63-8A05-F9CF721DC6E1}"
+	ProjectSection(SolutionItems) = preProject
+		00- CursoInicial.cs = 00- CursoInicial.cs
+		01 - ClasseInicial.cs = 01 - ClasseInicial.cs
+		01a - UsoWriteLine.cs = 01a - UsoWriteLine.cs
+		02 - CalculaAreaTriangulo.cs = 02 - CalculaAreaTriangulo.cs
+		03 - IdadeMaior_SalarioMedioOO.cs = 03 - IdadeMaior_SalarioMedioOO.cs
+		04 - ClassesAtributosMetodos.cs = 04 - ClassesAtributosMetodos.cs
+		05 - Construtores_This.cs = 05 - Construtores_This.cs
+		05a - Encapsulamento_Properties.cs = 05a - Encapsulamento_Properties.cs
+		06 - Memoria_Array.cs = 06 - Memoria_Array.cs
+		06a - ModificaParam_List_boxing.cs = 06a - ModificaParam_List_boxing.cs
+		06b - Matriz_Empregado.cs = 06b - Matriz_Empregado.cs
+		07 - Especiais_String_DateTime_TimeSpan.cs = 07 - Especiais_String_DateTime_TimeSpan.cs
+		08 - Git e Github.cs = 08 - Git e Github.cs
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E52C1588-1CAF-47CA-B00A-2E864469CF81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E52C1588-1CAF-47CA-B00A-2E864469CF81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E52C1588-1CAF-47CA-B00A-2E864469CF81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E52C1588-1CAF-47CA-B00A-2E864469CF81}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3F3F002E-3225-4FEB-BE8D-FE67DF3514A1}
+	EndGlobalSection
+EndGlobal
