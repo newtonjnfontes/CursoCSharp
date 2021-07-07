@@ -18,7 +18,14 @@ namespace Introducao_Git_GitHub // daclaração de namespace desse probrama
 
             Console.WriteLine("---------------------------");
             Console.WriteLine("Introdução Git e GitHub ");
-            
+            Console.WriteLine("Comandos : ");
+            Console.WriteLine("No diretório do projeto abrir o git bash - botão direito do mouse ");
+            Console.WriteLine("git init  -> cria area no projeto ");
+            Console.WriteLine("git status -> verifica arquivos para incluir na versão (em vermelho)");
+            Console.WriteLine("git add .  -> coloca na lista de transferência - com git status fica verde ");
+            Console.WriteLine("git commit -m 'texto da versão'  -> inclui arquivos na versão");
+            Console.WriteLine("git log -> mostra histórico das versões feitas ");
+
         }
 
     }
