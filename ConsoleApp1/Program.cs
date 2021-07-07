@@ -37,6 +37,7 @@ namespace Introducao_Git_GitHub // daclaração de namespace desse probrama
             Console.WriteLine("git remote set-url origin https://github.com/newtonjnfontes/CursoCSharp02.git -> altera endereço git remoto");
             Console.WriteLine("git push -u origin master -> envia arquivos para o github setado ( nas proximas vezes basta o git push ");
             Console.WriteLine("git clone 'https://github.com/newtonjnfontes/CursoCSharp.git' -> salva no diretorio local o git remoto");
+            Console.WriteLine("git pull origin master -> atualiza o diretório local com o git remoto");
 
 
         }
