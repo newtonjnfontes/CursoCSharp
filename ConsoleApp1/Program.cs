@@ -36,12 +36,12 @@ namespace Enumeracao_Composicao // daclaração de namespace desse probrama
             Console.Write("Nome Trabalhador: ");
             string nome = Console.ReadLine();
             Console.Write("Nivel de Experiêndia : (Junior/NivelMedio/Senior): ");
-            NivelTrabalho nivel = Enum.Parse<NivelTrabalho>(Console.ReadLine());
+            NivelTrabalho nivel = Enum.Parse<NivelTrabalho>(Console.ReadLine()); // armazena no nivel o valor digitado
             Console.Write("Salário Base: ");
             double salarioBase = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-            Departamento depto = new Departamento(deptNome);
-            Trabalhador trabalho = new Trabalhador(nome, nivel, salarioBase, depto);
+            Departamento depto = new Departamento(deptNome); // objetos instanciados
+            Trabalhador trabalho = new Trabalhador(nome, nivel, salarioBase, depto); // objetos instanciados
 
             Console.Write("Quantos Contratos nesse Trabalho? ");
             int n = int.Parse(Console.ReadLine());
@@ -62,11 +62,35 @@ namespace Enumeracao_Composicao // daclaração de namespace desse probrama
             Console.WriteLine();
             Console.Write("Entre com o Mês e o Ano para calcular o rendimento (MM/AAAA): ");
             string mesAno = Console.ReadLine();
-            int mes = int.Parse(mesAno.Substring(0, 2));
-            int ano = int.Parse(mesAno.Substring(3));
+            int mes = int.Parse(mesAno.Substring(0, 2)); // para os dois primeiros caracteres do mesano e coloca como int
+            int ano = int.Parse(mesAno.Substring(3)); // pega da posição 4 em diante os caracteres do mesano e coloca como int
             Console.WriteLine("Nome : " + trabalho.Nome);
             Console.WriteLine("Departamento: " + trabalho.Departamento.Nome);
             Console.WriteLine("Rendimento para " + mesAno + ": " + trabalho.Rendimento(ano,mes).ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine("---------------------------");
+            Console.WriteLine("Exemplo com variavel StringBuilder ( texto modificável) ");
+            Comentario c1 = new Comentario("Tenha uma boa Viagem!");
+            Comentario c2 = new Comentario("Isto é muito Interessante!");
+            Publicar p1 = new Publicar(
+                    DateTime.Parse("21/06/2018 13:05:44"),
+                    "Viajando  para a Espanha",
+                    "Estou indo visitar um Pais encantador!",
+                    12);
+            p1.AdicionaComentario(c1);
+            p1.AdicionaComentario(c2);
+
+            Comentario c3 = new Comentario("Boa Noite");
+            Comentario c4 = new Comentario("A Paz esteja convosco");
+            Publicar p2 = new Publicar(
+                    DateTime.Parse("28/07/2018 23:14:19"),
+                    "Boa Noite Pessoal",
+                    "Vejo Vocês amanhã",
+                    5);
+            p2.AdicionaComentario(c3);
+            p2.AdicionaComentario(c4);
+
+            Console.WriteLine(p1);
+            Console.WriteLine(p2);
         }
     }
 }

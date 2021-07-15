@@ -1,5 +1,5 @@
 ﻿using ConsoleApp1.Entidades.Enums;
-using System.Collections.Generic;
+using System.Collections.Generic; // namespace da classe List
 
 
 namespace ConsoleApp1.Entidades
@@ -10,7 +10,7 @@ namespace ConsoleApp1.Entidades
         public NivelTrabalho Nivel { get; set; }
         public double SalarioBase { get; set; }
         public Departamento Departamento { get; set; }
-        public List<HoraContrato> Contrato { get; private set; } = new List<HoraContrato>();
+        public List<HoraContrato> Contrato { get; private set; } = new List<HoraContrato>(); // new para evitar lista nula
 
         public Trabalhador()
         {
@@ -36,8 +36,8 @@ namespace ConsoleApp1.Entidades
 
         public double Rendimento(int ano, int mes)
         {
-            double soma = SalarioBase;
-            foreach (HoraContrato contrato in Contrato)
+            double soma = SalarioBase; // pega o salario base como inicio da soma
+            foreach (HoraContrato contrato in Contrato) // percorre a lista e compara data com o Mês selecionado
             {
                 if (contrato.Data.Year == ano && contrato.Data.Month == mes)
                 {
