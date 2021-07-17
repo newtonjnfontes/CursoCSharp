@@ -41,16 +41,20 @@ namespace ConsoleApp1.Entidades
             varSB.AppendLine(); // adiciona linha vazia
             varSB.AppendFormat("{0:C} ", Gosto);  // Formada variável Gosto com R$ xx,00
             varSB.Append(" Gostos - ");
-            varSB.Insert(10, ". Muito Bem! "); // Adiciona após o caracter 10 o conteudo informado
-            varSB.Remove(30, 4); // Remove a partir do caracter 20, 4 caracteres
-            varSB.Replace('!', '?'); // troca o cacater ! pelo ? no primeiro que achar
             varSB.AppendLine(Momento.ToString("dd/MM/yyyy HH:mm:ss"));
-            varSB.AppendLine(Conteudo);
+            varSB.AppendLine(Conteudo + " - ");
+            varSB.Replace('!', '?'); // troca o cacater ! pelo ? no primeiro que achar
             varSB.AppendLine("Comentario:");
             foreach (Comentario varComentario in Comentar) // percorre a lista Comentar e adiciona o conteudo à 
             {
                 varSB.AppendLine(varComentario.Texto);
             }
+            int tamanho = varSB.Length; // tamanho do texto com adições
+            Console.WriteLine(tamanho);
+            tamanho -= 38;
+            Console.WriteLine(tamanho);
+            varSB.Insert(tamanho, ". Muito Bem! "); // Adiciona após o tamanho o conteudo informado
+            varSB.Remove(tamanho + 17, 4); // Remove a partir do tamanho + 17, 4 caracteres
             varSB.AppendLine("Tamanho da String Builder : " + varSB.Length);
             return varSB.ToString();
         }
